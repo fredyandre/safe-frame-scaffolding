@@ -117,6 +117,9 @@ a{color:inherit;text-decoration:none}
 .testimonial-author div{display:flex;flex-direction:column}
 .testimonial-author strong{font-size:.84rem;text-transform:uppercase;letter-spacing:.06em}
 .testimonial-author small{color:#9fa1a6}
+.google-reviews-link{display:inline-flex;align-items:center;gap:12px;margin-top:34px;padding-bottom:8px;border-bottom:1px solid #ffffff4d;color:#fff;font-size:.78rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.google-reviews-link span{color:#d5a33b;font-size:1rem}
+.google-reviews-link:hover{border-color:#d5a33b}
 .contact{position:relative;min-height:650px;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
 .contact-photo{position:absolute;inset:0;background:linear-gradient(#0c0d10d9,#0c0d10e6),url('assets/project-4.svg') center/cover}
 .contact-inner{position:relative;z-index:2;max-width:850px;padding:80px 24px}
