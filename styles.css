@@ -21,12 +21,12 @@ a{color:inherit;text-decoration:none}
 .header-cta:hover{background:var(--red);border-color:var(--red)}
 .menu-toggle{display:none}
 .hero{min-height:100svh;position:relative;color:#fff;display:grid;align-items:center;overflow:hidden;background:#111}
-.hero-media{position:absolute;inset:0 0 0 46%;z-index:0;overflow:hidden;background:#111 url('assets/gallery/site-13.webp') center 45%/cover;transform:none}
+.hero-media{position:absolute;inset:0 0 0 46%;z-index:0;overflow:hidden;background:#111 url('assets/project-14.webp') center 38%/cover;transform:none}
 .hero-media:after{content:"";position:absolute;inset:0;z-index:4;background:linear-gradient(90deg,rgba(9,10,12,.94) 0%,rgba(9,10,12,.64) 48%,rgba(9,10,12,.18) 100%)}
-.hero-slide{position:absolute;inset:-2%;background-position:center 45%;background-size:cover;opacity:0;transform:scale(1.045);animation:heroSlideshow 21s infinite ease-in-out;will-change:opacity,transform}
-.hero-slide-church{background-image:url('assets/gallery/site-13.webp');animation-delay:0s}
-.hero-slide-project-front{background-image:url('assets/project-14.webp');background-position:center 38%;animation-delay:7s}
-.hero-slide-project-rear{background-image:url('assets/project-15.webp');background-position:center 45%;animation-delay:14s}
+.hero-slide{position:absolute;inset:-2%;background-position:center 45%;background-size:cover;opacity:0;transform:scale(1.065) translateX(1.2%);animation:heroSlideshow 12s infinite cubic-bezier(.45,0,.25,1);will-change:opacity,transform}
+.hero-slide-project-front{background-image:url('assets/project-14.webp');background-position:center 38%;animation-delay:0s}
+.hero-slide-project-rear{background-image:url('assets/project-15.webp');background-position:center 45%;animation-delay:4s}
+.hero-slide-church{background-image:url('assets/gallery/site-13.webp');animation-delay:8s}
 .hero-grid{position:absolute;inset:0;z-index:1;opacity:.11;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(to right,#000,transparent 75%)}
 .hero-content{position:relative;z-index:2;width:min(780px,calc(100% - 48px));margin:auto;padding-top:80px}
 .eyebrow{font-size:.82rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:11px;margin:0 0 22px}
@@ -161,7 +161,7 @@ footer{position:relative;padding:76px max(24px,calc((100vw - var(--max))/2)) 105
 @keyframes heroZoom{from{transform:scale(1.12)}
 to{transform:scale(1.04)}
 }
-@keyframes heroSlideshow{0%{opacity:0;transform:scale(1.055)}5%,29%{opacity:1}34%,100%{opacity:0;transform:scale(1.015)}}
+@keyframes heroSlideshow{0%{opacity:0;transform:scale(1.065) translateX(1.2%)}6%{opacity:1}29%{opacity:1;transform:scale(1.025) translateX(0)}35%,100%{opacity:0;transform:scale(1.01) translateX(-.7%)}}
 @keyframes scrollPulse{0%,100%{opacity:.35;transform:scaleY(.65);transform-origin:top}
 50%{opacity:1;transform:scaleY(1)}
 }
@@ -311,6 +311,6 @@ footer{grid-template-columns:1fr;gap:38px;padding-left:24px;padding-right:24px}
 .reveal{opacity:1;transform:none;transition:none}
 .hero-media,.scroll-cue span{animation:none}
 .hero-slide{animation:none;opacity:0;transform:none}
-.hero-slide-church{opacity:1}
+.hero-slide-project-front{opacity:1}
 .project img,.button{transition:none}
 }
