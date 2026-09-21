@@ -313,6 +313,6 @@ footer{grid-template-columns:1fr;gap:38px;padding-left:24px;padding-right:24px}
 .reveal{opacity:1;transform:none;transition:none}
 .hero-media,.scroll-cue span{animation:none}
 .hero-slide{animation:none;transition:none;opacity:0;transform:none}
-.hero-slide-project-front{opacity:1}
+.hero-slide.is-active{opacity:1}
 .project img,.button{transition:none}
 }
