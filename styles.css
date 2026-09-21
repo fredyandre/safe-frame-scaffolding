@@ -152,9 +152,9 @@ footer{position:relative;padding:76px max(24px,calc((100vw - var(--max))/2)) 105
 .footer-cta a{display:flex;justify-content:space-between;width:100%;padding:13px 0;border-bottom:1px solid var(--red);color:#fff;font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em}
 .footer-cta a:hover{color:#fff}
 .footer-cta b{color:var(--red);font-size:1rem}
-.site-credit{position:absolute;left:max(24px,calc((100vw - var(--max))/2));bottom:19px;display:flex;align-items:center;gap:10px;color:#bbb5a5;font-family:Georgia,"Times New Roman",serif;font-size:.82rem;font-style:italic;letter-spacing:.01em;white-space:nowrap}
-.site-credit-mark{display:block;width:42px;height:42px;overflow:hidden;flex:0 0 42px}
-.site-credit-mark img{width:273px;max-width:none;transform:translate(-116px,-43px);mix-blend-mode:screen;opacity:.88}
+.site-credit{position:absolute;left:max(24px,calc((100vw - var(--max))/2));bottom:19px;display:flex;align-items:center;gap:8px;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:.74rem;font-style:italic;letter-spacing:.01em;white-space:nowrap}
+.site-credit-mark{display:block;width:34px;height:34px;overflow:hidden;flex:0 0 34px}
+.site-credit-mark img{width:221px;max-width:none;transform:translate(-94px,-35px);filter:grayscale(1) brightness(1.8);mix-blend-mode:screen;opacity:.94}
 .copyright{position:absolute;bottom:29px;left:50%;transform:translateX(-50%);margin:0;font-size:.8rem;color:#777a80;white-space:nowrap}
 .reveal{opacity:0;transform:translateY(34px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
 .reveal[data-delay="1"]{transition-delay:.1s}
@@ -303,9 +303,9 @@ footer{grid-template-columns:1fr 1fr;padding-bottom:135px}
 .contact{min-height:590px}
 footer{grid-template-columns:1fr;gap:38px;padding-left:24px;padding-right:24px}
 .footer-cta{padding:28px 0 0;border-left:0;border-top:1px solid #ffffff24}
-.site-credit{left:24px;right:auto;bottom:55px;font-size:.75rem}
-.site-credit-mark{width:36px;height:36px;flex-basis:36px}
-.site-credit-mark img{width:234px;transform:translate(-100px,-37px)}
+.site-credit{left:24px;right:auto;bottom:55px;font-size:.69rem}
+.site-credit-mark{width:30px;height:30px;flex-basis:30px}
+.site-credit-mark img{width:195px;transform:translate(-83px,-31px)}
 .copyright{left:24px}
 }
 
