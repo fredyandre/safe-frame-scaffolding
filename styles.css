@@ -131,12 +131,12 @@ a{color:inherit;text-decoration:none}
 .testimonial-arrow:hover{background:var(--ink);color:#fff}
 .testimonial-prev{left:36px}
 .testimonial-next{right:36px}
-.google-reviews-link{display:inline-flex;align-items:center;gap:14px;margin-top:22px;padding:11px 15px 11px 12px;background:#fff;color:var(--ink);border:1px solid #17181b26;box-shadow:0 10px 26px #17181b0c;text-align:left;transition:transform .25s,border-color .25s,box-shadow .25s}
-.google-review-mark{display:grid;place-items:center;width:36px;height:36px;flex:0 0 36px;border-radius:50%;background:#f3f3f1;color:var(--red);font:900 1rem/1 Arial,sans-serif}
-.google-review-copy{display:flex;flex-direction:column;font-size:.76rem;font-weight:900;line-height:1.25;letter-spacing:.055em;text-transform:uppercase}
-.google-review-copy small{margin-bottom:3px;color:#73757a;font-size:.59rem;font-weight:700;letter-spacing:.11em}
-.google-review-arrow{margin-left:8px;color:var(--red);font-size:.95rem}
-.google-reviews-link:hover{transform:translateY(-2px);border-color:#a51c3066;box-shadow:0 14px 32px #17181b16}
+.google-reviews-link{position:relative;display:inline-flex;align-items:center;gap:12px;margin-top:24px;padding:8px 0 6px;color:#3d3f44;font-size:.72rem;font-weight:900;letter-spacing:.105em;text-transform:uppercase;transition:color .25s}
+.google-reviews-link:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#17181b40;transform-origin:left;transition:background .25s,transform .25s}
+.google-reviews-link span{color:var(--red);font-size:.9rem;transition:transform .25s}
+.google-reviews-link:hover{color:var(--red)}
+.google-reviews-link:hover:after{background:var(--red);transform:scaleX(.72)}
+.google-reviews-link:hover span{transform:translate(2px,-2px)}
 .contact{position:relative;min-height:650px;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
 .contact-photo{position:absolute;inset:0;background:linear-gradient(#0c0d10d9,#0c0d10e6),url('assets/project-4.svg') center/cover}
 .contact-inner{position:relative;z-index:2;max-width:850px;padding:80px 24px}
@@ -336,10 +336,7 @@ footer{grid-template-columns:1fr 1fr;padding-bottom:135px}
 .testimonial-prev{left:calc(50% - 51px)}
 .testimonial-next{right:calc(50% - 51px)}
 .testimonial-arrow{top:auto;bottom:0;width:42px;height:42px;font-size:1.55rem;transform:none}
-.google-reviews-link{margin-top:8px;padding:10px 13px 10px 10px;gap:11px}
-.google-review-mark{width:34px;height:34px;flex-basis:34px}
-.google-review-copy{font-size:.7rem}
-.google-review-arrow{margin-left:3px}
+.google-reviews-link{margin-top:10px;padding:9px 0 6px;font-size:.67rem;letter-spacing:.09em}
 .contact{min-height:620px}
 .contact-inner{padding:72px 20px 86px}
 .contact-inner>p:not(.eyebrow){margin:22px auto 28px;line-height:1.65}
