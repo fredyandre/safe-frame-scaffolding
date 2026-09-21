@@ -13,8 +13,10 @@ document.querySelector('#year').textContent=new Date().getFullYear();
 const heroSlides=[...document.querySelectorAll('.hero-slide')];
 if(heroSlides.length){
   const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reducedMotion){
-    heroSlides[0].classList.add('is-active');
+  const requestedHero=Number(new URLSearchParams(window.location.search).get('hero'));
+  const previewHero=Number.isInteger(requestedHero)&&requestedHero>=1&&requestedHero<=heroSlides.length?requestedHero-1:null;
+  if(reducedMotion||previewHero!==null){
+    heroSlides[previewHero??0].classList.add('is-active');
   }else{
     let activeHeroSlide=0;
     requestAnimationFrame(()=>requestAnimationFrame(()=>heroSlides[0].classList.add('is-active')));
