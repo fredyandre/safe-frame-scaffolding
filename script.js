@@ -54,3 +54,16 @@ if(lightbox&&galleryItems.length){
     if(event.key==='ArrowRight')showImage(activeImage+1);
   });
 }
+
+const testimonialTrack=document.querySelector('.testimonial-track');
+if(testimonialTrack){
+  const testimonialCards=[...testimonialTrack.querySelectorAll('.testimonial-card')];
+  const scrollReviews=direction=>{
+    const firstCard=testimonialCards[0];
+    if(!firstCard)return;
+    const gap=parseFloat(getComputedStyle(testimonialTrack).gap)||0;
+    testimonialTrack.scrollBy({left:direction*(firstCard.getBoundingClientRect().width+gap),behavior:'smooth'});
+  };
+  document.querySelector('.testimonial-prev')?.addEventListener('click',()=>scrollReviews(-1));
+  document.querySelector('.testimonial-next')?.addEventListener('click',()=>scrollReviews(1));
+}
