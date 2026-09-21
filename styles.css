@@ -292,9 +292,15 @@ footer{grid-template-columns:1fr 1fr;padding-bottom:135px}
 .hero .eyebrow span{width:28px}
 .hero h1{max-width:10.5ch;font-size:clamp(2.35rem,11vw,3.1rem);line-height:.93;letter-spacing:-.05em;text-wrap:balance}
 .hero-copy{max-width:36rem;margin:20px 0 24px;font-size:.96rem;line-height:1.5;color:#e7e7e7}
-.hero-actions{gap:10px}
-.button{width:100%}
-.hero .button{min-height:50px;padding:0 16px}
+.hero-actions{display:flex;align-items:center;gap:18px;max-width:360px}
+.hero-actions .button{width:auto;min-height:50px;padding:0 19px;gap:11px;white-space:nowrap}
+.hero-actions .button-primary{box-shadow:0 12px 28px #0004}
+.hero-actions .button-primary span{font-size:1rem;transition:transform .25s}
+.hero-actions .button-primary:hover span{transform:translateX(3px)}
+.hero-actions .button-ghost{min-height:auto;padding:8px 1px 6px;border:0;border-bottom:1px solid #ffffff80;background:transparent;font-size:.7rem;letter-spacing:.06em}
+.hero-actions .button-ghost span{color:#cf5264;font-size:.9rem}
+.hero-actions .button-ghost:hover{background:transparent;color:#fff;border-bottom-color:#fff}
+.contact-actions .button{width:100%}
 .whatsapp-button{right:14px;bottom:max(14px,env(safe-area-inset-bottom));width:48px;height:48px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .25s,visibility .25s,transform .25s,background .25s}
 .whatsapp-button.is-ready{opacity:1;visibility:visible;transform:none}
 .whatsapp-button svg{width:23px;height:23px}
