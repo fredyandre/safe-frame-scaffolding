@@ -44,7 +44,7 @@ a{color:inherit;text-decoration:none}
 .button-primary:hover{background:var(--red-dark);transform:translateY(-2px)}
 .button-ghost{border:1px solid #ffffff88;color:#fff}
 .button-ghost:hover{background:#fff;color:#111}
-.hero-actions .button{border-radius:8px}
+.hero-actions .button,.contact-actions .button,.footer-socials a{border-radius:8px}
 .hero-stat{position:absolute;right:max(24px,calc((100vw - var(--max))/2));bottom:54px;z-index:3;border-left:2px solid var(--red);padding:3px 0 3px 17px;display:flex;flex-direction:column;text-shadow:0 2px 14px #000}
 .hero-stat strong{font-size:1.48rem;line-height:1;text-transform:uppercase;letter-spacing:.02em}
 .hero-stat span{margin-top:7px;color:#e1e2e4;font-size:.9rem;letter-spacing:.025em}
