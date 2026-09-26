@@ -151,6 +151,10 @@ footer{position:relative;padding:76px max(24px,calc((100vw - var(--max))/2)) 105
 .footer-logo strong{font-size:1.15rem;letter-spacing:.05em;margin:0}
 .footer-logo small{font-size:.72rem;letter-spacing:.24em;margin-top:6px;color:#bfc0c3}
 .footer-brand p{max-width:330px;margin:0;color:#aeb0b5}
+.footer-socials{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:2px}
+.footer-socials a{display:inline-flex;align-items:center;gap:9px;padding:9px 13px 9px 10px;border:1px solid #ffffff24;color:#d8d9dc;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:border-color .25s ease,background .25s ease,color .25s ease,transform .25s ease}
+.footer-socials a:hover{border-color:#ffffff58;background:#ffffff0d;color:#fff;transform:translateY(-2px)}
+.footer-socials svg{width:20px;height:20px;fill:currentColor}
 .footer-links{display:flex;flex-direction:column;align-items:flex-start;gap:11px}
 .footer-links strong{margin-bottom:10px;text-transform:uppercase;font-size:.8rem;letter-spacing:.14em;color:#fff}
 .footer-links a{color:#c8c9cc}
@@ -347,6 +351,7 @@ footer{grid-template-columns:1fr 1fr;padding-bottom:135px}
 .contact-inner{padding:72px 20px 86px}
 .contact-inner>p:not(.eyebrow){margin:22px auto 28px;line-height:1.65}
 footer{grid-template-columns:1fr;gap:34px;padding:62px 22px 34px}
+.footer-socials a{padding:9px 12px 9px 9px}
 .footer-cta{padding:28px 0 0;border-left:0;border-top:1px solid #ffffff24}
 .site-credit{position:static;grid-column:1;font-size:.68rem;white-space:normal}
 .site-credit-mark{width:30px;height:30px;flex-basis:30px}
